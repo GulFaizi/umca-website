@@ -1,7 +1,7 @@
 import React from 'react';
 import './OurTeam.scss';
 
-import habbibullah_ziar from '../assets/team/habbibullah_ziar.jpg';
+import habibullah_ziar from '../assets/team/habbibullah_ziar.jpg';
 import img2 from '../assets/team/member2.jpg';
 import img3 from '../assets/team/member3.jpg';
 import img4 from '../assets/team/member4.jpg';
@@ -13,7 +13,7 @@ const OurTeam = () => {
     // Dummy data for team members
     const teamData = {
         top: [
-            { id: 1, name: 'Habbibullah Ziar', position: 'President', photo: habbibullah_ziar, desc: 'Leading the UMCA vision and ensuring community engagement.' }
+            { id: 1, name: 'Habibullah Ziar', position: 'President', photo: habibullah_ziar, desc: 'Leading the UMCA vision and ensuring community engagement.' }
         ],
         row1: [
             { id: 2, name: 'Sahil', position: 'Vice President', photo: img2, desc: 'Overseeing daily operations and guiding our projects.' },
