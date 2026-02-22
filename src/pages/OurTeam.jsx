@@ -16,16 +16,16 @@ const OurTeam = () => {
             { id: 1, name: 'Habbibullah Ziar', position: 'President', photo: habbibullah_ziar, desc: 'Leading the UMCA vision and ensuring community engagement.' }
         ],
         row1: [
-            { id: 2, name: 'Aisha Rahman', position: 'Vice President', photo: img2, desc: 'Overseeing daily operations and guiding our projects.' },
+            { id: 2, name: 'Rohullah Sahib', position: 'Vice President', photo: img2, desc: 'Overseeing daily operations and guiding our projects.' },
             { id: 3, name: 'Tariq Mansoor', position: 'Secretary', photo: img3, desc: 'Managing communications and administrative workflows.' }
         ],
         row2: [
-            { id: 4, name: 'Fatima Zahra', position: 'Treasurer', photo: img4, desc: 'Managing finances and ensuring sustainable growth.' },
+            { id: 4, name: 'Ajmil Jalal', position: 'Treasurer', photo: img4, desc: 'Managing finances and ensuring sustainable growth.' },
             { id: 5, name: 'Bilal Ahmed', position: 'Operations Director', photo: img5, desc: 'Coordinating events and operational logistics.' }
         ],
         row3: [
             { id: 6, name: 'Hassan Ali', position: 'Community Lead', photo: img6, desc: 'Building relationships and engaging our core members.' },
-            { id: 7, name: 'Zainab Qazi', position: 'Marketing Head', photo: img7, desc: 'Promoting our message and expanding our reach.' }
+            { id: 7, name: 'Gul Ahmad Hatif', position: 'Marketing Head', photo: img7, desc: 'Promoting our message and expanding our reach.' }
         ]
     };
 
