@@ -1,0 +1,64 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.donate-container {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.donate-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.donate-card {
+    padding: 40px;
+    background-color: $white;
+    border-radius: $radius-lg;
+    max-width: 450px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.donate-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: $primary-color;
+}
+
+.donate-card-text {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.qr-placeholder {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #f1f3f5;
+    border: 2px dashed #ccc;
+    border-radius: $radius-md;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.qr-text-main {
+    color: #888;
+    font-weight: 500;
+}
+
+.qr-text-sub {
+    color: #aaa;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.donate-footer {
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: #555;
+}

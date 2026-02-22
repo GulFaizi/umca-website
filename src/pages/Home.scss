@@ -1,0 +1,54 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.section {
+    padding: $spacing-xxl 0;
+}
+
+.bg-light {
+    background-color: $white;
+}
+
+.mission-wrapper {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-text {
+    font-size: 1.2rem;
+    color: $text-light;
+    line-height: 1.8;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $spacing-lg;
+    text-align: center;
+    margin-top: $spacing-xl;
+}
+
+.impact-item {
+    h3 {
+        font-size: 3rem;
+        color: $secondary-color;
+        margin-bottom: $spacing-xs;
+    }
+
+    p {
+        font-weight: 600;
+        color: $text-color;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: $spacing-xl;
+    margin-top: $spacing-xl;
+}
+
+.text-light-color {
+    color: $text-light;
+}

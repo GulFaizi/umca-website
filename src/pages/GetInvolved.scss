@@ -1,0 +1,147 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.involved-page {
+    background-color: #f9fafb;
+    min-height: calc(100vh - 80px);
+    color: $text-color;
+}
+
+.involved-hero {
+    padding: 80px 20px 60px 20px;
+    text-align: center;
+}
+
+.involved-hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.involved-icon-main {
+    font-size: 3.5rem;
+    color: $accent-color;
+    margin-bottom: 25px;
+}
+
+.involved-title {
+    font-size: 3rem;
+    color: $primary-color;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.involved-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cards-container {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.action-card {
+    background-color: $white;
+    border-radius: $radius-lg;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &.primary {
+        .action-card-icon-wrapper {
+            background-color: #e6eaf5;
+
+            .action-card-icon {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &.accent {
+        .action-card-icon-wrapper {
+            background-color: #fdeeed;
+
+            .action-card-icon {
+                color: $accent-color;
+            }
+        }
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+        .action-card-icon-wrapper {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.action-card-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+
+    .action-card-icon {
+        font-size: 2.5rem;
+    }
+}
+
+.action-card-title {
+    font-size: 1.4rem;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.action-card-desc {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.involved-footer {
+    background-color: $white;
+    padding: 80px 20px;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.involved-footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.involved-footer-title {
+    color: $primary-color;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.involved-footer-text {
+    font-size: 1.15rem;
+    color: #666;
+    margin-bottom: 40px;
+}

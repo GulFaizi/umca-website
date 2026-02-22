@@ -1,0 +1,17 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.news-page {
+    padding: 40px 20px;
+}
+
+.news-loading {
+    padding: 40px;
+    text-align: center;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+}
