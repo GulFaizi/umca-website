@@ -1,5 +1,26 @@
 [
     {
+        "id": 1788820640033,
+        "title": "Distribution of Winter Kits in Refugee Camps",
+        "date": "2026-09-07",
+        "author": "Sahil",
+        "readTime": "3 min read",
+        "summary": "Distribution of Winter Kits in Refugee Camps",
+        "image": "/src/assets/uploads/1788820639903-pexels-christina99999-38524143.jpg",
+        "content": "Distribution of Winter Kits in Refugee CampsDistribution of Winter Kits in Refugee CampsDistribution o",
+        "quote": null,
+        "relatedImages": [
+            {
+                "url": "/src/assets/uploads/1788820639903-pexels-christina99999-38524143.jpg",
+                "title": "pexels-christina99999-38524143.jpg"
+            },
+            {
+                "url": "/src/assets/uploads/1788820640031-pexels-amal-a-s-2150318757-31913642.jpg",
+                "title": "pexels-amal-a-s-2150318757-31913642.jpg"
+            }
+        ]
+    },
+    {
         "id": 1788804961526,
         "title": "Distribution of Winter Kits in Refugee Camps",
         "date": "2026-09-07",
@@ -7,14 +28,12 @@
         "readTime": "3 min read",
         "summary": "hfdsghf",
         "image": "/src/assets/uploads/1788804961487-pexels-steve-30018097.jpg",
-        "content": [
-            "fdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsd"
-        ],
+        "content": "fdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahilfdlskfkjdhsfhkshdfjksdf\ndsfkjsdhfjhsdfgsdsahilsahilsahil",
         "quote": null,
         "relatedImages": [
             {
                 "url": "/src/assets/uploads/1788804961487-pexels-steve-30018097.jpg",
-                "title": "pexels-steve-30018097.jpg"
+                "title": "Cover Photo"
             },
             {
                 "url": "/src/assets/uploads/1788804961522-pexels-christina99999-38524143.jpg",

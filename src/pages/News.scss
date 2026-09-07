@@ -166,12 +166,35 @@
         }
     }
 
-    .add-article-btn {
-        display: inline-flex;
+    .management-actions {
+        display: flex;
         align-items: center;
-        gap: 8px;
-        padding: 9px 18px;
-        font-size: 0.9rem;
+        gap: 12px;
+        flex-wrap: wrap;
+
+        .export-news-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 16px;
+            font-size: 0.9rem;
+            color: $primary-color;
+            border-color: #cbd5e1;
+            background: $white;
+
+            &:hover {
+                border-color: $primary-color;
+                background: #f8fafc;
+            }
+        }
+
+        .add-article-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 18px;
+            font-size: 0.9rem;
+        }
     }
 }
 

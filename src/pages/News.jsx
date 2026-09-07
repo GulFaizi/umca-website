@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../components/Card';
 import NewsModal from '../components/NewsModal';
-import { fetchNews, createNews, updateNews, deleteNews } from '../services/api';
+import { fetchNews, createNews, updateNews, deleteNews, exportNewsData } from '../services/api';
 import { useAuth } from '../context/AuthContext';
-import { FaNewspaper, FaPlus, FaEdit, FaTrash, FaCheckCircle } from 'react-icons/fa';
+import { FaNewspaper, FaPlus, FaEdit, FaTrash, FaCheckCircle, FaDownload } from 'react-icons/fa';
 import './News.scss';
 
 const News = () => {
@@ -47,16 +47,31 @@ const News = () => {
     };
 
     const handleSaveArticle = async (formData) => {
-        if (editingArticle) {
-            // Update
-            const updated = await updateNews(editingArticle.id, formData);
-            setNews(prev => prev.map(item => item.id === updated.id ? updated : item));
-            showToast('Article updated successfully!');
-        } else {
-            // Create
-            const created = await createNews(formData);
-            setNews(prev => [created, ...prev]);
-            showToast('New article published successfully!');
+        try {
+            if (editingArticle) {
+                // Update
+                const updated = await updateNews(editingArticle.id, formData);
+                setNews(prev => prev.map(item => item.id === updated.id ? updated : item));
+                showToast('Article updated successfully!');
+            } else {
+                // Create
+                const created = await createNews(formData);
+                setNews(prev => [created, ...prev]);
+                showToast('New article published successfully!');
+            }
+        } catch (err) {
+            console.error("Failed to save article:", err);
+            alert("Could not save article: " + (err.message || 'Unknown error'));
+        }
+    };
+
+    const handleExport = async () => {
+        try {
+            await exportNewsData();
+            showToast('news.json exported successfully!');
+        } catch (err) {
+            console.error("Failed to export news data:", err);
+            alert("Failed to export data: " + err.message);
         }
     };
 
@@ -113,14 +128,25 @@ const News = () => {
                     <div className="news-management-bar">
                         <div className="management-info">
                             <span className="user-role-tag">{user.role}</span>
-                            <span>Signed in as <strong>{user.name}</strong> • You can insert, edit, and remove news.</span>
+                            <span>Signed in as <strong>{user.name}</strong> • You can create, edit, and remove news.</span>
                         </div>
-                        <button
-                            className="button primary add-article-btn"
-                            onClick={handleOpenAdd}
-                        >
-                            <FaPlus /> Add New Article
-                        </button>
+                        <div className="management-actions">
+                            <button
+                                type="button"
+                                className="button outline export-news-btn"
+                                onClick={handleExport}
+                                title="Download all current articles as news.json for GitHub deployment"
+                            >
+                                <FaDownload /> Export news.json
+                            </button>
+                            <button
+                                type="button"
+                                className="button primary add-article-btn"
+                                onClick={handleOpenAdd}
+                            >
+                                <FaPlus /> Add New Article
+                            </button>
+                        </div>
                     </div>
                 )}
 

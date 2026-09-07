@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../components/Button';
 import './Donate.scss';
 
 const Donate = () => {
@@ -10,20 +9,27 @@ const Donate = () => {
                 Every donation helps us continue our work serving the community. Whether big or small, your generosity supports our programs and services that benefit hundreds of families.
             </p>
 
-            <div className="donate-card">
-                <h3 className="donate-card-title">Donate via Zelle</h3>
-                <p className="donate-card-text">
-                    You can easily send us a donation through Zelle by scanning the QR code below.
+            {/* Embedded Zeffy Donation Card */}
+            <div className="donate-card donate-card-wide">
+                <iframe
+                    title="Donation form powered and secured by Zeffy"
+                    src="https://www.zeffy.com/embed/donation-form/support-umca-building-a-stronger-community-together"
+                    allow="payment"
+                    className="zeffy-embed-iframe"
+                />
+            </div>
+
+            <div className="donate-external-link">
+                <p>
+                    Having trouble viewing the form?{' '}
+                    <a
+                        href="https://www.zeffy.com/en-US/donation-form/support-umca-building-a-stronger-community-together"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Open donation page in a new tab ↗
+                    </a>
                 </p>
-
-                <div className="qr-placeholder">
-                    <span className="qr-text-main">[QR Code Placeholder]</span>
-                    <span className="qr-text-sub">Image will go here</span>
-                </div>
-
-                <div className="donate-footer">
-                    <strong>Zelle Email/Phone:</strong> donate@umca.example.com
-                </div>
             </div>
         </div>
     );
