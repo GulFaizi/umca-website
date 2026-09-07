@@ -131,14 +131,7 @@ const News = () => {
                             <span>Signed in as <strong>{user.name}</strong> • You can create, edit, and remove news.</span>
                         </div>
                         <div className="management-actions">
-                            <button
-                                type="button"
-                                className="button outline export-news-btn"
-                                onClick={handleExport}
-                                title="Download all current articles as news.json for GitHub deployment"
-                            >
-                                <FaDownload /> Export news.json
-                            </button>
+
                             <button
                                 type="button"
                                 className="button primary add-article-btn"
