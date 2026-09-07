@@ -70,7 +70,7 @@ const News = () => {
             await exportNewsData();
             showToast('news.json exported successfully!');
         } catch (err) {
-            console.error("Failed to export news data:", err);
+            console.error("Failed to  data:", err);
             alert("Failed to export data: " + err.message);
         }
     };
