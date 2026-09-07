@@ -4,7 +4,6 @@ import {
     FaMapMarkerAlt,
     FaEnvelope,
     FaPhone,
-    FaRegClock,
     FaFacebookF,
     FaTwitter,
     FaInstagram,
@@ -50,7 +49,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <h3 className="contact-title">Phone</h3>
-                            <a href="tel:+12407030117" className="contact-link">+1 (571) 337 8802</a>
+                            <a href="tel:+15713378802" className="contact-link">+1 (571) 337-8802</a>
                         </div>
                     </div>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
     FaFacebookF, FaTwitter, FaInstagram, FaYoutube,
-    FaMapMarkerAlt, FaEnvelope, FaPhone, FaRegClock,
+    FaMapMarkerAlt, FaEnvelope, FaPhone,
     FaAngleRight
 } from 'react-icons/fa';
 import './Footer.scss';
@@ -31,7 +31,7 @@ const Footer = () => {
                     <ul className="contact-list">
                         <li>
                             <FaMapMarkerAlt className="contact-icon" />
-                            <span>Maryland, United States</span>
+                            <span>3434 Washington Blvd Arlington VA 22201</span>
                         </li>
                         <li>
                             <FaEnvelope className="contact-icon" />
@@ -39,11 +39,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <FaPhone className="contact-icon contact-icon-flipped" />
-                            <a href="tel:+12407030117">+1(240) 7030117</a>
-                        </li>
-                        <li>
-                            <FaRegClock className="contact-icon" />
-                            <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                            <a href="tel:+15713378802">+1 (571) 337-8802</a>
                         </li>
                     </ul>
                 </div>
