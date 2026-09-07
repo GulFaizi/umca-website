@@ -11,57 +11,7 @@ import {
     FaBullhorn,
     FaBookReader
 } from 'react-icons/fa';
-import emergencyReliefImg from '../assets/emergency-relief.jpg';
-import orphanSponsorshipImg from '../assets/orphan-sponsorship.jpg';
-import cleanWaterImg from '../assets/clean-water.png';
-import educationImg from '../assets/education.jpg';
-import healthcareImg from '../assets/healthcare.png';
-import foodSecurityImg from '../assets/food-security.jpg';
-
-const serviceAreas = [
-    {
-        id: 1,
-        title: 'Community Support & Care Management',
-        description: 'Comprehensive support and resources for individuals and families in need, including case assistance, guidance referrals, and ongoing support programs.',
-        image: orphanSponsorshipImg,
-        link: '/programs'
-    },
-    {
-        id: 2,
-        title: 'Education, Training & Youth Development',
-        description: 'Empowering youth and adults through Islamic and secular education programs, vocational training, leadership development, and mentorship opportunities.',
-        image: educationImg,
-        link: '/programs'
-    },
-    {
-        id: 3,
-        title: 'Humanitarian Relief & Emergency Assistance',
-        description: 'Responding to crises and providing aid to those facing hardships through food assistance, emergency funds, disaster relief, and community support.',
-        image: emergencyReliefImg,
-        link: '/emergency'
-    },
-    {
-        id: 4,
-        title: 'Health, Wellness & Social Services',
-        description: 'Promoting wellbeing through healthcare initiatives, mental health support, wellness programs, and social support services for all community members.',
-        image: healthcareImg,
-        link: '/programs'
-    },
-    {
-        id: 5,
-        title: 'Interfaith Dialogue & Civic Engagement',
-        description: 'Fostering understanding and cooperation between different faith communities through dialogue programs, community events, and civic participation initiatives.',
-        image: cleanWaterImg,
-        link: '/programs'
-    },
-    {
-        id: 6,
-        title: 'Advocacy for Fairness & Civil Rights',
-        description: 'Standing up for justice, fairness, and the rights of all people through advocacy, education, and community empowerment initiatives.',
-        image: foodSecurityImg,
-        link: '/programs'
-    }
-];
+import serviceAreas from '../data/programs';
 
 const umcaEntities = [
     {

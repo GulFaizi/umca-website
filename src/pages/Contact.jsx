@@ -28,7 +28,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <h3 className="contact-title">Address</h3>
-                            <p className="contact-text">Maryland, United States</p>
+                            <p className="contact-text">3434 Washington Blvd Arlington VA 22201</p>
                         </div>
                     </div>
 
@@ -50,20 +50,10 @@ const Contact = () => {
                         </div>
                         <div>
                             <h3 className="contact-title">Phone</h3>
-                            <a href="tel:+12407030117" className="contact-link">+1(240) 7030117</a>
+                            <a href="tel:+12407030117" className="contact-link">+1 (571) 337 8802</a>
                         </div>
                     </div>
 
-                    {/* Office Hours */}
-                    <div className="contact-item">
-                        <div className="contact-icon-wrapper">
-                            <FaRegClock />
-                        </div>
-                        <div>
-                            <h3 className="contact-title">Office Hours</h3>
-                            <p className="contact-text">Monday – Friday: 9:00 AM – 5:00 PM</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div>

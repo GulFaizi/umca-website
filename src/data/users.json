@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "umcausa54321@#",
+    "name": "Administrator",
+    "email": "admin@umca.org",
+    "role": "Admin",
+    "avatar": "🛡️"
+  },
+  {
+    "id": 2,
+    "username": "sahil",
+    "password": "sahil@@54321",
+    "name": "Sahil",
+    "email": "sarah.j@umca.org",
+    "role": "Editor",
+    "avatar": "✍️"
+  }
+]

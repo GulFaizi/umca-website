@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaSignOutAlt, FaUserCircle } from 'react-icons/fa';
+import { useAuth } from '../context/AuthContext';
 import Button from './Button';
 import './Navbar.scss';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { user, logout } = useAuth();
 
     const toggleMenu = () => setIsOpen(!isOpen);
+
+    const handleLogout = () => {
+        logout();
+        if (isOpen) setIsOpen(false);
+    };
 
     return (
         <nav className="navbar">
@@ -44,6 +51,30 @@ const Navbar = () => {
                     <li className="nav-item">
                         <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active-link' : 'nav-link')} onClick={toggleMenu}>Contact</NavLink>
                     </li>
+
+                    {user ? (
+                        <li className="nav-item nav-user-item">
+                            <div className="nav-user-chip">
+                                <span className="user-icon">{user.avatar}</span>
+                                <span className="user-name">{user.name}</span>
+                                <span className="user-role-badge">{user.role}</span>
+                            </div>
+                            <button
+                                onClick={handleLogout}
+                                className="nav-logout-btn"
+                                title="Sign Out"
+                            >
+                                <FaSignOutAlt /> Sign Out
+                            </button>
+                        </li>
+                    ) : (
+                        <li className="nav-item">
+                            <NavLink to="/login" className={({ isActive }) => (isActive ? 'active-link' : 'nav-link')} onClick={toggleMenu}>
+                                Login
+                            </NavLink>
+                        </li>
+                    )}
+
                     <li className="nav-btn">
                         <Button to="/donate" variant="primary">Donate Now</Button>
                     </li>
@@ -54,3 +85,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

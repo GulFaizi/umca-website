@@ -2,12 +2,13 @@ import React from 'react';
 import './OurTeam.scss';
 
 import habibullah_ziar from '../assets/team/habbibullah_ziar.jpg';
-import img2 from '../assets/team/member2.jpg';
-import img3 from '../assets/team/member3.jpg';
-import img4 from '../assets/team/member4.jpg';
-import img5 from '../assets/team/member5.jpg';
-import img6 from '../assets/team/member6.jpg';
-import img7 from '../assets/team/member7.jpg';
+import Naimatyar from '../assets/team/Naimatyar.png';
+import Shafiq from '../assets/team/Shafiq.png';
+import Mumtaz from '../assets/team/Mumtaz.jpeg';
+import sahil from '../assets/team/sahil.png';
+import Najib from '../assets/team/Najib.png';
+import anas from '../assets/team/anas.png';
+import zakir from '../assets/team/zakir.png';
 
 const OurTeam = () => {
     // Dummy data for team members
@@ -16,16 +17,19 @@ const OurTeam = () => {
             { id: 1, name: 'Habibullah Ziar', position: 'President', photo: habibullah_ziar, desc: 'Leading the UMCA vision and ensuring community engagement.' }
         ],
         row1: [
-            { id: 2, name: 'Sahil', position: 'Vice President', photo: img2, desc: 'Overseeing daily operations and guiding our projects.' },
-            { id: 3, name: 'Tariq Mansoor', position: 'Secretary', photo: img3, desc: 'Managing communications and administrative workflows.' }
+            { id: 2, name: 'Niamat Rasool Niamatyar', position: 'Vice President for Tarbiyya', photo: Naimatyar, desc: 'Overseeing daily operations and guiding our projects.' },
+            { id: 3, name: 'Mohammad Shafiq Qureshi', position: 'General Secretary', photo: Shafiq, desc: 'Managing communications and administrative workflows.' }
         ],
         row2: [
-            { id: 4, name: 'Jalal', position: 'Treasurer', photo: img4, desc: 'Managing finances and ensuring sustainable growth.' },
-            { id: 5, name: 'Bilal Ahmed', position: 'Operations Director', photo: img5, desc: 'Coordinating events and operational logistics.' }
+            { id: 4, name: 'Fazal Wahab Mumtaz', position: 'Director of Outreach', photo: Mumtaz, desc: 'Managing finances and ensuring sustainable growth.' },
+            { id: 5, name: 'Rohullah Sahil', position: 'Board Member', photo: sahil, desc: 'Coordinating events and operational logistics.' }
         ],
         row3: [
-            { id: 6, name: 'Hassan Ali', position: 'Community Lead', photo: img6, desc: 'Building relationships and engaging our core members.' },
-            { id: 7, name: 'Hatif', position: 'Marketing Head', photo: img7, desc: 'Promoting our message and expanding our reach.' }
+            { id: 6, name: 'Najibullah Shukoor', position: 'Director of North East Region', photo: Najib, desc: 'Building relationships and engaging our core members.' },
+            { id: 7, name: 'Anas Safi', position: 'COO, UMCA Relief', photo: anas, desc: 'Building relationships and engaging our core members.' }
+        ],
+        row4: [
+            { id: 8, name: 'Zakirullah  Safi', position: 'CEO, UMCA Relief', photo: zakir, desc: 'Promoting our message and expanding our reach.' }
         ]
     };
 
@@ -77,6 +81,11 @@ const OurTeam = () => {
                 {/* Tier 4: Two Members */}
                 <div className="team-tier-two">
                     {teamData.row3.map(renderCard)}
+                </div>
+
+                {/* Tier 5: Single Member (Bottom) */}
+                <div className="team-tier-one">
+                    {teamData.row4.map(renderCard)}
                 </div>
             </div>
         </div>

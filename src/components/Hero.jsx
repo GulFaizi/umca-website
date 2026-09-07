@@ -7,13 +7,14 @@ const Hero = () => {
         <div className="hero-container">
             <div className="hero-content">
                 <h1>Welcome to UMCA</h1>
-                <p>United Muslim Community of America - Serving Humanity with Compassion, Dignity, Justice, and Excellence</p>
+                <p>United Muslim Community of America</p>
+                <p>Faith - Identity - Service</p>
                 <div className="hero-btns">
                     <Button to="/programs" variant="primary" className="hero-btn">
                         Our Programs
                     </Button>
-                    <Button to="/about" variant="secondary" className="hero-btn">
-                        Learn More
+                    <Button to="/donate" variant="secondary" className="hero-btn">
+                        Donate
                     </Button>
                 </div>
             </div>

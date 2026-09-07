@@ -93,6 +93,68 @@
     margin-left: $spacing-md;
 }
 
+.nav-user-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0.5rem;
+
+    .nav-user-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #f1f5f9;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: $primary-color;
+        border: 1px solid #e2e8f0;
+
+        .user-icon {
+            font-size: 1rem;
+        }
+
+        .user-name {
+            max-width: 110px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .user-role-badge {
+            background: $primary-color;
+            color: $white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+    }
+
+    .nav-logout-btn {
+        background: none;
+        border: 1px solid #cbd5e1;
+        color: #64748b;
+        border-radius: 4px;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            border-color: $accent-color;
+            color: $accent-color;
+            background: #fff5f5;
+        }
+    }
+}
+
+
 @include mobile {
     .nav-mobile-icon {
         display: block;
